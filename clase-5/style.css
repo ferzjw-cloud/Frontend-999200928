@@ -3,3 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+* {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10;
+    font-weight: lighter;
+    line-height: 1.6;
+    font-style: italic;*/
+       }
+       
+       
+       /*Display como se comporta un elemento en el flujo del documento*/
+
+    /*Display block -> ocupa el 100% del ancho disponible del elemento padre (h1=body*/
+    h1 {
+        background-color: yellowgreen;
+        display: block;
+
+        }
+
+    button {
+        display: inline; 
+        background-color: violet;
+            }
+
+    span {
+        color: red;
+        font-style: bold;
+        display: inline-block;
+        width: 110px; 
+        background-color: aquamarine; 
+    }
+
+    /*display flex -> filas o columnas*/
+    /*un contenedor flexible puede ubicar los leemntos hijos*/
+    /*display grid -> grillas + filas y columnas*/
+
+    section {
+        background-color: wheat;
+        padding: 20px;
+        /*display flex: cambia el eje principal*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /*justify content aplica al eje principal (horizontal*/
+        align-items: center;
+        /*align items aplica al eje secundario (vertical)*/
+        /*funcion 100vh vh viewport heights= el alto de la ventana*/
+        height: 100vh;
+    }
+    div {
+        background-color: rgba(153, 205, 50, 0.288);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
+        font-family: 'Courier New', Courier, monospace;   
+        width: 400px;      
+    }
+
+    div h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+            }
+    div h3 {
+        text-align: center;
+        font-weight: lighter;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    p {
+        color: grey;
+        font-size: 15px;
+        margin-bottom: 10px;
+        }
+    
+    button {
+        border: none;
+        background-color: turquoise;
+        padding: 8px 16px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
